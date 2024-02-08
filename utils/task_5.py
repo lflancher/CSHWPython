@@ -9,6 +9,8 @@ student_dict = {
 
 #Using list splicing and printing the new list
 def book_list():
+  for i in range(0, len(books)):
+    books[i] = books[i].split(" by ")[0]
   new_list = books[0:3]
   print(new_list)
   #return new_list

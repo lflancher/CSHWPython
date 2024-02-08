@@ -3,9 +3,9 @@ from utils.task_5 import book_list, people
 def test_book_list(capfd):
   book_list()
   #Replit gave me some trouble with my line size when programming, hence why there is a list that appends new books
-  whatiscorrect = ["The Stand by Stephen King"]
-  whatiscorrect.append("The Count of Monte Cristo by Alexandre Dumas")
-  whatiscorrect.append("The Shining by Stephen King")
+  whatiscorrect = ["The Stand"]
+  whatiscorrect.append("The Count of Monte Cristo")
+  whatiscorrect.append("The Shining")
   out, err = capfd.readouterr()
   assert out == (str(whatiscorrect) + "\n")
 
